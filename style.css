@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color:#333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #30d5c8;;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: Black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.profile-img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    color: #007BFF;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #7F675B;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+}
